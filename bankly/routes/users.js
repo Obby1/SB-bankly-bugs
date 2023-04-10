@@ -67,7 +67,8 @@ router.get('/:username', authUser, requireLogin, async function(
 // removed requireAdmin middleware
 // added error handler to check if admin when trying to change admin status
 // fixes bug #2
-router.patch('/:username', authUser, requireLogin, async function(
+// router.patch('/:username', authUser, requireLogin, async function(
+router.patch('/:username', async function(
   req,
   res,
   next

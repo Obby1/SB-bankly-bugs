@@ -137,7 +137,7 @@ describe("GET /users", function() {
       .get("/users")
       .send({ _token: tokens.u1 });
     expect(response.statusCode).toBe(200);
-    expect(response.body.users.length).toBe(3);
+    expect(response.body.users.length).toBe(3) ;
   });
 
 });
